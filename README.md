@@ -184,3 +184,4 @@ To verify:
 - Do **not** modify `database.py` logic.
 - Ensure your `.sql` queries execute correctly before implementing them in Flask.
 - **Queries in `queries.py` will be used for future assignments. Do not modify this file now.**
+# IMD-Database-Project
