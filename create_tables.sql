@@ -22,12 +22,13 @@ CREATE TABLE Likes (
 );
 
 CREATE TABLE Movie (
-    mpid INT,   
-    boxoffice_collection INT CHECK (boxoffice_collection >= 0)
+    mpid INT PRIMARY KEY,   
+    boxoffice_collection INT CHECK (boxoffice_collection >= 0),
+    FOREIGN KEY (mpid) REFERENCES MotionPicture(id)
 );
 
 CREATE TABLE Series (
-    mpid INT,   
+    mpid INT PRIMARY KEY,   
     season_count INT CHECK (season_count >= 0),
     FOREIGN KEY (mpid) REFERENCES MotionPicture(id)
 );
